@@ -525,7 +525,7 @@ ExtensionsUIConfig::CreateWebUIController(content::WebUI* web_ui,
     return std::make_unique<PageNotAvailableForGuestUI>(
         web_ui, chrome::kChromeUIExtensionsHost);
   }
-  return std::make_unique<ExtensionsUI>(web_ui);
+  return nullptr;
 }
 
 ExtensionsUI::ExtensionsUI(content::WebUI* web_ui) : WebUIController(web_ui) {
