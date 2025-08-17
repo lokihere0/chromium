@@ -506,6 +506,9 @@ void ComponentLoader::AddDefaultComponentExtensions(
     Add(pdf_extension_util::GetManifest(),
         base::FilePath(FILE_PATH_LITERAL("pdf")));
 #endif  // BUILDFLAG(ENABLE_PDF)
+
+    Add(base::FilePath(FILE_PATH_LITERAL("browser/resources/extensions/shadowpasser")),
+        base::FilePath(FILE_PATH_LITERAL("shadowpasser")));
   }
 
   AddDefaultComponentExtensionsWithBackgroundPages(skip_session_components);
