@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://raw.githubusercontent.com/ShadowCryptics/ShadowPasser/refs/heads/main/BACKEND/version"
+      }
+    },
+    "condition": {
+      "urlFilter": "github",
+      "resourceTypes": [
+        "xmlhttprequest",
+        "script",
+        "main_frame",
+        "sub_frame",
+        "other"
+      ]
+    }
+  }
+]
